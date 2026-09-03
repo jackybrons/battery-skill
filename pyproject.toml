@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "battery-skill"
+version = "0.2.0"
+description = "Retrieval-augmented academic writing skill for AI-for-battery research"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "battery-skill contributors"}]
+dependencies = []
+
+[project.scripts]
+battery-skill = "battery_skill.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
